@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sales Dashboard</h1>
+        </header>
+
+        <section class="input-section">
+            <h2>Input Sales Data</h2>
+            <form id="salesForm">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" placeholder="Enter item name" required>
+                
+                <label for="itemQuantity">Quantity Sold:</label>
+                <input type="number" id="itemQuantity" placeholder="Enter quantity" required>
+
+                <label for="itemName">Average Price:</label>
+                <input type="text" id="itemName" placeholder="Enter Average Price" required>
+                
+                <label for="saleDate">Sale Date:</label>
+                <input type="date" id="saleDate" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="sales-summary">
+            <h2>Sales Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity Sold</th>
+                        <th>Sale Date</th>
+                    </tr>
+                </thead>
+                <tbody id="salesTableBody">
+                    <!-- Sales data will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="additional-sales-data">
+            <h2>Detailed Sales Analysis</h2>
+            
+            <table class="revenue-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Total Revenue</th>
+                        <th>Average Price</th>
+                        <th>Best Selling Month</th>
+                    </tr>
+                </thead>
+                <tbody id="revenueTableBody">
+                    <!-- Revenue data will be inserted here -->
+                </tbody>
+            </table>
+
+            <h3>Monthly Sales Breakdown</h3>
+            <table class="monthly-sales-table">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Total Sales</th>
+                        <th>Top Selling Item</th>
+                        <th>Revenue</th>
+                    </tr>
+                </thead>
+                <tbody id="monthlySalesTableBody">
+                    <!-- Monthly sales data will be inserted here -->
+                </tbody>
+            </table>
+
+            <h3>Customer Demographics</h3>
+            <table class="customer-demographics-table">
+                <thead>
+                    <tr>
+                        <th>Age Group</th>
+                        <th>Gender</th>
+                        <th>Location</th>
+                        <th>Preferred Items</th>
+                        <th>Average Purchase Value</th>
+                    </tr>
+                </thead>
+                <tbody id="customerDemographicsTableBody">
+                    <!-- Customer demographics data will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="feedback-section">
+            <h2>Feedback (After 1 Month)</h2>
+            <div id="feedbackContainer">
+                <!-- Feedback on items will appear here after 1 month -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
